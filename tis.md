@@ -24,3 +24,4 @@ Transactions transition to status `REJECTED` if they were not received at least 
 
 This feature is currently enabled for statuses
 - `SENT_TO_NETWORK`
+- `SEEN_ON_NETWORK`
