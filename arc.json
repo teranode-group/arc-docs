@@ -382,7 +382,7 @@
           "Arc"
         ],
         "summary": "Submit multiple transactions.",
-        "description": "This endpoint is used to send multiple raw transactions to a miner for inclusion in the next block that the miner creates.",
+        "description": "This endpoint is used to send multiple raw transactions to a miner for inclusion in the next block that the miner creates. The number of transactions that can be sent in a single request is limited to 50.",
         "parameters": [
           {
             "$ref": "#/components/parameters/callbackUrl"

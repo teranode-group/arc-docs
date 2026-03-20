@@ -993,7 +993,7 @@ curl -X POST https://arc.taal.com/v1/txs \
 
 `POST /v1/txs`
 
-This endpoint is used to send multiple raw transactions to a miner for inclusion in the next block that the miner creates.
+This endpoint is used to send multiple raw transactions to a miner for inclusion in the next block that the miner creates. The number of transactions that can be sent in a single request is limited to 50.
 
 > Body parameter
 

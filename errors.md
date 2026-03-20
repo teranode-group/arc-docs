@@ -47,4 +47,7 @@ ErrStatusCumulativeFees: Cumulative fee validation failed.
 ErrStatusTxSize: Transaction size validation failed.
 
 # 475
-ErrStatusMinedAncestorsNotFoundInBUMP: input mined ancestor is not present in provided BUMPs
+ErrStatusMinedAncestorsNotFoundInBUMP: input mined ancestor is not present in provided BUMPs.
+
+# 476
+ErrStatusMaximumBatchSizeExceeded: Maximum batch size exceeded.
