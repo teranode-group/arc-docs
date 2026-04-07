@@ -1,4 +1,4 @@
-# **ARC** - Authoritative Response Component - v1.5.15
+# **ARC** - Authoritative Response Component - v1.6.2-sv
 > Transaction processor for Bitcoin
 
 **ARC** is a multi-layer transaction processor for Bitcoin that keeps track of the life cycle of a transaction as it is processed by the Bitcoin network. Next to the mining status of a transaction, ARC also keeps track of the various states that a

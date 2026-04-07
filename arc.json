@@ -2,7 +2,7 @@
   "openapi": "3.0.0",
   "info": {
     "title": "ARC - Authoritative Response Component",
-    "version": "v1.5.15",
+    "version": "v1.6.2-sv",
     "license": {
       "name": "Open BSV Licence",
       "url": "https://bitcoinassociation.net/open-bsv-license/"

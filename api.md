@@ -1,5 +1,5 @@
 ---
-title: ARC - Authoritative Response Component v1.5.15
+title: ARC - Authoritative Response Component v1.6.2-sv
 language_tabs:
   - http: HTTP
   - javascript: JavaScript
@@ -26,7 +26,7 @@ headingLevel: 2
 
 <!-- Generator: Widdershins v4.0.1 -->
 
-<h1 id="arc-authoritative-response-component">ARC - Authoritative Response Component v1.5.15</h1>
+<h1 id="arc-authoritative-response-component">ARC - Authoritative Response Component v1.6.2-sv</h1>
 
 > Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
 
