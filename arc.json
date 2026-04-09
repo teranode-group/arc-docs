@@ -127,7 +127,7 @@
           "Arc"
         ],
         "summary": "Submit a transaction.",
-        "description": "This endpoint is used to send a raw transaction to a miner for inclusion in the next block that the miner creates.",
+        "description": "This endpoint is used to send a raw transaction to a miner for inclusion in the next block that the miner creates. The maximum transaction size is 10Mb (lowest between the node MaxTxSizePolicy and ARC own maxTxSizeBytes)",
         "parameters": [
           {
             "$ref": "#/components/parameters/callbackUrl"
@@ -382,7 +382,7 @@
           "Arc"
         ],
         "summary": "Submit multiple transactions.",
-        "description": "This endpoint is used to send multiple raw transactions to a miner for inclusion in the next block that the miner creates. The number of transactions that can be sent in a single request is limited to 50.",
+        "description": "This endpoint is used to send multiple raw transactions to a miner for inclusion in the next block that the miner creates. The number of transactions that can be sent in a single request is limited to 50. The maximum transaction size for each tx is 10Mb (lowest between the node MaxTxSizePolicy and ARC own maxTxSizeBytes)",
         "parameters": [
           {
             "$ref": "#/components/parameters/callbackUrl"

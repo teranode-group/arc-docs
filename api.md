@@ -685,7 +685,7 @@ curl -X POST https://arc.taal.com/v1/tx \
 
 `POST /v1/tx`
 
-This endpoint is used to send a raw transaction to a miner for inclusion in the next block that the miner creates.
+This endpoint is used to send a raw transaction to a miner for inclusion in the next block that the miner creates. The maximum transaction size is 10Mb (lowest between the node MaxTxSizePolicy and ARC own maxTxSizeBytes)
 
 > Body parameter
 
@@ -993,7 +993,7 @@ curl -X POST https://arc.taal.com/v1/txs \
 
 `POST /v1/txs`
 
-This endpoint is used to send multiple raw transactions to a miner for inclusion in the next block that the miner creates. The number of transactions that can be sent in a single request is limited to 50.
+This endpoint is used to send multiple raw transactions to a miner for inclusion in the next block that the miner creates. The number of transactions that can be sent in a single request is limited to 50. The maximum transaction size for each tx is 10Mb (lowest between the node MaxTxSizePolicy and ARC own maxTxSizeBytes)
 
 > Body parameter
 
