@@ -593,10 +593,7 @@ flowchart TD
     A[Incoming new block received from peers] --> B{Block already in DB?}
     B -->|Yes| S((STOP))
     B -->|NO| C[Insert block to DB]
-    C --> D["`Assign status to the new block based on a previous block. Status is one of:
-    - LONGEST
-    - STALE (fork)
-    - ORPHANED`"]
+    C --> D["`Assign status to the new block based on a previous block. Status is one of: LONGEST | STALE (fork) | ORPHANED`"]
     D --> E{Switch block.Status}
 
     E --> F[ORPHANED]
