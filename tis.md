@@ -25,3 +25,9 @@ Transactions transition to status `REJECTED` if they were not received at least 
 This feature is currently enabled for statuses
 - `SENT_TO_NETWORK`
 - `SEEN_ON_NETWORK`
+
+## API
+
+### Transaction size limitation
+
+ARC instance has a size limitation of 10 MB for transaction payload.
