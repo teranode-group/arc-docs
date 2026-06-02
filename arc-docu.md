@@ -110,7 +110,7 @@ It can happen for various reasons that a transaction is stuck in an intermediate
 
 For example, a transaction can get remain in status `SEEN_ON_NETWORK` or `SENT_TO_NETWORK` if it had been mined previously in a block but that block was mined a longer time a go than the data retention period of the ARC instance (see [Data storage](#data-storage)).
 
-Metamorph has a mechanism that will automatically set a transaction status to `REJECTED` under certain condtions. For a specified list of transaction statuses, Metamorph will request the transaction from different mempools. If Metamorph didn't receive the transaction during a specified time period, and if during that time period a specified number of blocks has been mined, then the transaction status will transition to `REJECTED`. The mechanism can be configured by the operator of ARC and can also be disabled entirely.
+Metamorph has a mechanism that will automatically set a transaction status to `REJECTED` under certain conditions. For a specified list of transaction statuses, Metamorph will request the transaction from different mempools. If Metamorph didn't receive the transaction during a specified time period, and if during that time period a specified number of blocks has been mined, then the transaction status will transition to `REJECTED`. The mechanism can be configured by the operator of ARC and can also be disabled entirely.
 
 ```plantuml
 @startuml
