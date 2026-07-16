@@ -46,7 +46,7 @@
           "Arc"
         ],
         "summary": "Get metamorph health",
-        "description": "Checks if metamorph is healthy and running",
+        "description": "Checks if metamorph is healthy and connected to at least the minimum number of nodes",
         "responses": {
           "200": {
             "description": "Success",
@@ -54,12 +54,32 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/Health"
+                },
+                "example": {
+                  "healthy": true,
+                  "version": "v1.0.0",
+                  "reason": null
                 }
               }
             }
           },
           "401": {
             "$ref": "#/components/responses/NotAuthorized"
+          },
+          "503": {
+            "description": "Metamorph is unreachable or not connected to the minimum number of nodes",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Health"
+                },
+                "example": {
+                  "healthy": false,
+                  "version": "v1.0.0",
+                  "reason": "processor has less than minimum healthy peer connections"
+                }
+              }
+            }
           }
         }
       }

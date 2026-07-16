@@ -310,7 +310,7 @@ curl -X GET https://arc.taal.com/v1/health \
 
 `GET /v1/health`
 
-Checks if metamorph is healthy and running
+Checks if metamorph is healthy and connected to at least the minimum number of nodes
 
 > Example responses
 
@@ -318,9 +318,19 @@ Checks if metamorph is healthy and running
 
 ```json
 {
+  "healthy": true,
+  "version": "v1.0.0",
+  "reason": null
+}
+```
+
+> 503 Response
+
+```json
+{
   "healthy": false,
   "version": "v1.0.0",
-  "reason": "no db connection"
+  "reason": "processor has less than minimum healthy peer connections"
 }
 ```
 
@@ -330,6 +340,7 @@ Checks if metamorph is healthy and running
 |---|---|---|---|
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Success|[Health](#schemahealth)|
 |401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|Security requirements failed|None|
+|503|[Service Unavailable](https://tools.ietf.org/html/rfc7231#section-6.6.4)|Metamorph is unreachable or not connected to the minimum number of nodes|[Health](#schemahealth)|
 
 <aside class="warning">
 To perform this operation, you must be authenticated by means of one of the following methods:
